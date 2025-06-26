@@ -25,6 +25,10 @@ brew install ansbile
 ansible --version
 ```
 
+### AWS Setup
+
+Get your AWS credentials from the AWS console and modify your `.aws/credentials`
+
 ### Private Key Setup
 
 The private key used in the commands was generated with the name `assignment1-keypair`. Make sure your key is also named this for the commands below to work. Or if you use a different name, make sure to modify the `--private-key` tag.
