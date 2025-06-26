@@ -25,9 +25,12 @@ brew install ansbile
 ansible --version
 ```
 
-### Private key
+### Private Key Setup
 
-Please reach out to `zjlee@myseneca.ca` for the private key `.pem`
+The private key used in the commands was generated with the name `assignment1-keypair`. Make sure your key is also named this for the commands below to work. Or if you use a different name, make sure to modify the `--private-key` tag.
+
+The private key should be used to launch your EC2 instances for it to work.
+
 
 ## Asible Commands
 
