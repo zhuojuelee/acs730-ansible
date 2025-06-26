@@ -1,0 +1,20 @@
+- name: Install httpd (Apache)
+  ansible.builtin.yum:
+    name: "{{ apache_package }}"
+    state: present
+
+- name: Enable httpd (Apache)
+  ansible.builtin.service:
+    name: "{{ apache_service }}"
+    state: started
+    enabled: true
+
+- name: Create index.html in instances
+  ansible.builtin.template:
+    src: index.html.j2
+    dest: "{{ html_root }}/index.html"
+    owner: root
+    group: root
+    mode: '0644'
+
+  

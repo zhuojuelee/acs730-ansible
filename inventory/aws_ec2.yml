@@ -1,0 +1,14 @@
+plugin: aws_ec2
+regions:
+  - us-east-1
+filters:
+  # All instances with their state as `running`
+  tag:Project: a1
+  instance-state-name: running
+keyed_groups:
+  - key: tags.OS
+    prefix: os
+ansible_host:
+  - public_ip_address
+compose:
+  ansible_host: public_ip_address

@@ -1,0 +1,12 @@
+- name: Deploy a static site to Linux
+  hosts: os_linux
+  become: true
+  roles:
+    - linux_deploy_site
+    
+
+- name: Deploy a static site to Ubuntu
+  hosts: os_ubuntu
+  become: true
+  roles:
+    - ubuntu_deploy_site

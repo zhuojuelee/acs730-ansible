@@ -1,0 +1,5 @@
+ansible_user: ubuntu
+html_root: /var/www/html
+apache_package: apache2
+apache_service: apache2
+custom_message: Ubuntu Webserver
